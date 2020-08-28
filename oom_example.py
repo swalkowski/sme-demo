@@ -13,11 +13,11 @@ default_args = {
 }
 
 def oom():
-  print 'OOM Prologue'
+  print('OOM Prologue')
   strings = ['a']
   while True:
     strings.append(strings[-1] + strings[-1])
-  print 'OOM Epilogue'
+  print('OOM Epilogue')
 
 
 with DAG('oom_example', catchup=False, default_args=default_args) as dag:
