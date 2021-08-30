@@ -11,7 +11,7 @@ default_args = {
 
 
 dag = DAG(
-    'hello-world-cloud-build-test',
+    'hello-world-cloud-build-test-demo',
     default_args=default_args,
     description='git-sync testing',
     schedule_interval=timedelta(minutes=5))
